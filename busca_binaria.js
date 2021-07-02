@@ -1,5 +1,6 @@
 /*
 // na busca binária temos que ter os dados ordenados.//
+// encontra o meio do array e faz a busca//
 */ 
 var valores = [5, 8, 10, 22, 38, 45, 60, 90, 100, 120];
 
