@@ -14,8 +14,8 @@ function busca(num) {
 
 // usando a nossa ferramenta de busca
 
-console.log(busca(10));
-console.log(busca(50));
+console.log("achei na posição" + busca(10));
+console.log("não achei" + busca(50));
 
 // busca binária
 function buscaBin(num) {
@@ -23,12 +23,12 @@ function buscaBin(num) {
     let meio;
     let passos = 0;
     inicio = 0;
-    fim = 9;
+    fim = valores.length;
     while (inicio <= fim) {
         meio = parseInt((inicio + fim) / 2);
         passos = passos + 1;
         if (num == valores[meio]) {
-            console.log("achei em "+ passos +"passos");
+            console.log("achei em "+ passos +" passos");
             return meio;
         } else {
             if (num > valores[meio]) {
@@ -38,7 +38,7 @@ function buscaBin(num) {
             }
         }
     }
-    console.log("não achei em "+ passos +"passos");
+    console.log("não achei em "+ passos +" passos");
     return -1;
 }
 
